@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M.S. Jewellers | Exclusive Gold, Silver & Royal Bridal Jewellery in Jamia Nagar, New Delhi</title>
+  <meta name="description" content="M.S. Jewellers (एम.एस. ज्वैलर्स) — Batla House, Jamia Nagar, New Delhi. Discover fine 22K Gold, 925 Silver, Kundan Bridal Sets, and Custom Jewellery with personal service and competitive prices." />
+  <meta name="keywords" content="MS Jewellers, MS Jewellers Batla House, MS Jewellers Jamia Nagar, Gold Jewellery Okhla, Bridal Jewellery Delhi, Silver Jewellery Nafees Road" />
+  
+  <!-- Favicon / Monogram -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%23070708' stroke='%23D4AF37' stroke-width='4'/><text x='50%' y='60%' font-family='Cinzel, serif' font-weight='800' font-size='38' fill='%23F4E8C1' text-anchor='middle'>MS</text></svg>" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Splash Screen Entrance -->
+  <div class="splash-screen" id="splashScreen">
+    <div class="splash-logo-container">
+      <div class="splash-monogram">
+        <span>MS</span>
+      </div>
+      <h1 class="splash-title gold-gradient-text">M.S. JEWELLERS</h1>
+      <p class="splash-subtitle">एम.एस. ज्वैलर्स • JAMIA NAGAR</p>
+    </div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <nav class="nav-wrapper">
+        <a href="#home" class="brand-logo">
+          <div class="brand-monogram-icon">
+            <span>MS</span>
+          </div>
+          <div class="brand-text">
+            <span class="brand-name">M.S. JEWELLERS</span>
+            <span class="brand-subtext">एम.एस. ज्वैलर्स • NEW DELHI</span>
+          </div>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#collections" class="nav-link">Collections</a></li>
+          <li><a href="#bridal" class="nav-link">Bridal</a></li>
+          <li><a href="#products" class="nav-link">Catalog</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="btn-gold" onclick="chatOnWhatsApp()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.705 1.754zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+            Chat With Us
+          </button>
+        </div>
+
+        <button class="hamburger-btn" onclick="toggleMobileMenu()" aria-label="Open Navigation Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <button class="mobile-drawer-close" onclick="toggleMobileMenu()">✕</button>
+    <ul class="mobile-nav-links">
+      <li><a href="#home" class="mobile-nav-link" onclick="toggleMobileMenu()">Home</a></li>
+      <li><a href="#collections" class="mobile-nav-link" onclick="toggleMobileMenu()">Collections</a></li>
+      <li><a href="#bridal" class="mobile-nav-link" onclick="toggleMobileMenu()">Bridal Sets</a></li>
+      <li><a href="#products" class="mobile-nav-link" onclick="toggleMobileMenu()">Product Showcase</a></li>
+      <li><a href="#about" class="mobile-nav-link" onclick="toggleMobileMenu()">About M.S. Jewellers</a></li>
+      <li><a href="#reviews" class="mobile-nav-link" onclick="toggleMobileMenu()">Reviews</a></li>
+      <li><a href="#contact" class="mobile-nav-link" onclick="toggleMobileMenu()">Location & Contact</a></li>
+    </ul>
+    <div style="margin-top: 2.5rem;">
+      <button class="btn-gold" onclick="chatOnWhatsApp(); toggleMobileMenu();">
+        Chat With Us on WhatsApp
+      </button>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="hero-bg">
+      <img src="assets/images/hero-bg.jpg" alt="M.S. Jewellers Luxury Gold Jewellery Showcase" />
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          Batla House, Jamia Nagar • 4.1 ★ Rating
+        </div>
+        <h1 class="hero-title gold-gradient-text">
+          Timeless Jewellery.<br />Made for Your Moments.
+        </h1>
+        <p class="hero-subtitle">
+          Discover exquisite gold, silver, and bespoke bridal jewellery crafted to celebrate your most unforgettable moments.
+        </p>
+        <div class="hero-cta-group">
+          <a href="#collections" class="btn-gold">
+            Explore Collection
+          </a>
+          <button class="btn-outline-gold" onclick="chatOnWhatsApp()">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.705 1.754zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+            Chat With Us
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Ribbon -->
+  <div class="trust-ribbon">
+    <div class="container">
+      <div class="trust-ribbon-content">
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <div class="trust-text">
+            <h4>100% Certified Purity</h4>
+            <p>BIS Hallmarked Gold & 925 Silver</p>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="trust-text">
+            <h4>Transparent Pricing</h4>
+            <p>Competitive rates & fair making charges</p>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <div class="trust-text">
+            <h4>Weddings & Parties</h4>
+            <p>Extensive grand collection for all occasions</p>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+          </div>
+          <div class="trust-text">
+            <h4>Instant WhatsApp Service</h4>
+            <p>Direct consultation with jewellers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Collections Showcase (8 Editorial Cards) -->
+  <section class="collections-section" id="collections">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Curated Royalty</span>
+        <h2 class="section-title gold-gradient-text">Exquisite Collections</h2>
+        <p class="section-subtitle">Discover handcrafted jewellery created for weddings, grand festivities, and daily elegance.</p>
+      </div>
+
+      <div class="collections-grid">
+        <div class="collection-card" onclick="renderProducts('Gold Jewellery'); document.getElementById('products').scrollIntoView();">
+          <div class="collection-img-wrap">
+            <img src="assets/images/gold-necklace.jpg" alt="Gold Jewellery Collection" />
+          </div>
+          <div class="collection-overlay">
+            <span class="collection-category-tag">22K Certified</span>
+            <h3 class="collection-title">Gold Jewellery</h3>
+            <p class="collection-desc">Heritage solid gold chokers, chains, bangles, and temple jewellery crafted to perfection.</p>
+            <span class="collection-btn">View Collection →</span>
+          </div>
+        </div>
+
+        <div class="collection-card" onclick="renderProducts('Silver Jewellery'); document.getElementById('products').scrollIntoView();">
+          <div class="collection-img-wrap">
+            <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?q=80&w=800&auto=format&fit=crop" alt="Silver Jewellery Collection" />
+          </div>
+          <div class="collection-overlay">
+            <span class="collection-category-tag">925 Fine Silver</span>
+            <h3 class="collection-title">Silver Jewellery</h3>
+            <p class="collection-desc">Contemporary sterling silver necklaces, anklets, and rhodium-plated party wear.</p>
+            <span class="collection-btn">View Collection →</span>
+          </div>
+        </div>
+
+        <div class="collection-card" onclick="renderProducts('Bridal Collection'); document.getElementById('products').scrollIntoView();">
+          <div class="collection-img-wrap">
+            <img src="assets/images/bridal-set.jpg" alt="Bridal Jewellery Collection" />
+          </div>
+          <div class="collection-overlay">
+            <span class="collection-category-tag">Wedding Specialist</span>
+            <h3 class="collection-title">Bridal Collection</h3>
+            <p class="collection-desc">Grand Kundan, Polki, and heavy gold wedding sets designed for the majestic Indian bride.</p>
+            <span class="collection-btn">View Collection →</span>
+          </div>
+        </div>
+
+        <div class="collection-card" onclick="renderProducts('Rings'); document.getElementById('products').scrollIntoView();">
+          <div class="collection-img-wrap">
+            <img src="assets/images/diamond-ring.jpg" alt="Rings Collection" />
+          </div>
+          <div class="collection-overlay">
+            <span class="collection-category-tag">Solitaires & Bands</span>
+            <h3 class="collection-title">Rings</h3>
+            <p class="collection-desc">Engagement solitaires, antique gold cocktail rings, and daily wear gold bands.</p>
+            <span class="collection-btn">View Collection →</span>
+          </div>
+        </div>
+
+        <div class="collection-card" onclick="renderProducts('Necklaces'); document.getElementById('products').scrollIntoView();">
+          <div class="collection-img-wrap">
+            <img src="assets/images/hero-bg.jpg" alt="Necklaces Collection" />
+          </div>
+          <div class="collection-overlay">
+            <span class="collection-category-tag">Statement Pieces</span>
+            <h3 class="collection-title">Necklaces</h3>
+            <p class="collection-desc">Graceful choker sets, layered rani haars, and lightweight gold chain pendants.</p>
+            <span class="collection-btn">View Collection →</span>
+          </div>
+        </div>
+
+        <div class="collection-card" onclick="renderProducts('Earrings'); document.getElementById('products').scrollIntoView();">
+          <div class="collection-img-wrap">
+            <img src="https://images.unsplash.com/photo-1630019852942-f89202989a59?q=80&w=800&auto=format&fit=crop" alt="Earrings Collection" />
+          </div>
+          <div class="collection-overlay">
+            <span class="collection-category-tag">Jhumkas & Drops</span>
+            <h3 class="collection-title">Earrings</h3>
+            <p class="collection-desc">Intricate gold jhumkas, chandbalis, diamond studs, and party wear drops.</p>
+            <span class="collection-btn">View Collection →</span>
+          </div>
+        </div>
+
+        <div class="collection-card" onclick="renderProducts('Bracelets'); document.getElementById('products').scrollIntoView();">
+          <div class="collection-img-wrap">
+            <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?q=80&w=800&auto=format&fit=crop" alt="Bracelets Collection" />
+          </div>
+          <div class="collection-overlay">
+            <span class="collection-category-tag">Bangles & Kadas</span>
+            <h3 class="collection-title">Bracelets</h3>
+            <p class="collection-desc">Solid gold kadas, flexible gemstone bangles, and modern wrist cuffs.</p>
+            <span class="collection-btn">View Collection →</span>
+          </div>
+        </div>
+
+        <div class="collection-card" onclick="renderProducts('Custom Jewellery'); document.getElementById('products').scrollIntoView();">
+          <div class="collection-img-wrap">
+            <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?q=80&w=800&auto=format&fit=crop" alt="Custom Jewellery Atelier" />
+          </div>
+          <div class="collection-overlay">
+            <span class="collection-category-tag">Bespoke Atelier</span>
+            <h3 class="collection-title">Custom Jewellery</h3>
+            <p class="collection-desc">Have a design concept or online photo? Our master goldsmiths build it to your budget.</p>
+            <span class="collection-btn">View Collection →</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bridal Spotlight Banner -->
+  <section class="bridal-spotlight" id="bridal" style="padding: 5rem 0; background: linear-gradient(180deg, var(--bg-obsidian) 0%, #151310 100%); border-top: 1px solid var(--gold-border); border-bottom: 1px solid var(--gold-border);">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; align-items: center;">
+        <div>
+          <span class="section-tag">Grand Wedding Atelier</span>
+          <h2 class="gold-gradient-text" style="font-size: clamp(2rem, 3.5vw, 3.2rem); margin-bottom: 1.2rem;">
+            Crafted for Your Most Unforgettable Celebrations
+          </h2>
+          <p style="color: var(--text-muted); font-size: 1rem; margin-bottom: 1.8rem; line-height: 1.7;">
+            At M.S. Jewellers, we understand that wedding jewellery is an emotion passed down through generations. Our bridal sets combine rich Kundan artistry with certified 22K gold purity, offered at reasonable rates and competitive prices.
+          </p>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <button class="btn-gold" onclick="bookShowroomAppointment()">
+              Book Bridal Consultation
+            </button>
+            <button class="btn-outline-gold" onclick="enquireProduct('Bridal Jewellery Set', 'Bridal Collection', 'custom')">
+              Request Custom Bridal Design
+            </button>
+          </div>
+        </div>
+        <div style="position: relative;">
+          <img src="assets/images/bridal-set.jpg" alt="M.S. Jewellers Bridal Collection" style="width: 100%; border-radius: var(--radius-lg); border: 1px solid var(--gold-border-bright); box-shadow: var(--box-shadow-deep);" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Discovery Experience -->
+  <section class="products-section" id="products">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Direct WhatsApp Discovery</span>
+        <h2 class="section-title gold-gradient-text">Explore Our Showcase</h2>
+        <p class="section-subtitle">Click any piece to instantly enquire about pricing, availability, or custom designs on WhatsApp.</p>
+      </div>
+
+      <div class="product-filter-bar">
+        <button class="filter-btn active" data-filter="All">All Showcase</button>
+        <button class="filter-btn" data-filter="Gold Jewellery">Gold Jewellery</button>
+        <button class="filter-btn" data-filter="Silver Jewellery">Silver Jewellery</button>
+        <button class="filter-btn" data-filter="Bridal Collection">Bridal</button>
+        <button class="filter-btn" data-filter="Rings">Rings</button>
+        <button class="filter-btn" data-filter="Necklaces">Necklaces</button>
+        <button class="filter-btn" data-filter="Earrings">Earrings</button>
+        <button class="filter-btn" data-filter="Bracelets">Bracelets</button>
+        <button class="filter-btn" data-filter="Custom Jewellery">Custom</button>
+      </div>
+
+      <div class="product-search-wrap">
+        <span class="search-icon-pos">🔍</span>
+        <input type="text" id="productSearchInput" class="product-search-input" placeholder="Search gold chokers, silver sets, bridal Kundan..." />
+      </div>
+
+      <div class="products-grid" id="productsGrid">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Instagram Inspiration Section ("Seen something you love?") -->
+  <section class="instagram-inspo-section">
+    <div class="container">
+      <div class="inspo-card">
+        <div class="inspo-icon-badge">📸</div>
+        <h2 class="inspo-title gold-gradient-text">Seen something you love?</h2>
+        <p class="inspo-subtitle">
+          Send us the screenshot on WhatsApp and our jewellery experts will assist you with pricing, gold weight options, and custom crafting.
+        </p>
+        <button class="btn-gold" onclick="sendInspirationInquiry()">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.705 1.754zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+          Send Your Inspiration
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- "Ask Our Jewellers" Customer Question Builder -->
+  <section class="ask-section" id="ask">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Personal Consultation</span>
+        <h2 class="section-title gold-gradient-text">Ask Our Master Jewellers</h2>
+        <p class="section-subtitle">Have a question about pricing, gold purity, sizes, or custom designs? Ask below and chat directly on WhatsApp.</p>
+      </div>
+
+      <div class="ask-box">
+        <form onsubmit="submitCustomerQuestion(event)">
+          <div class="ask-form-group">
+            <label class="ask-label">Select Inquiry Topic</label>
+            <select id="askCategory" class="product-search-input" style="padding-left: 1.2rem; cursor: pointer;">
+              <option value="Price & Rate Inquiry">Today's Gold Rate & Pricing</option>
+              <option value="Custom Jewellery Design">Custom Jewellery Requirement</option>
+              <option value="Bridal Jewellery Consultation">Bridal & Wedding Collection</option>
+              <option value="Purity Verification & Certification">Gold Purity & BIS Certification</option>
+              <option value="Showroom Visit & Appointment">Showroom Visit & Timing</option>
+            </select>
+          </div>
+
+          <div class="ask-form-group">
+            <label class="ask-label">Quick Suggestions (Click to fill)</label>
+            <div class="prompt-chips">
+              <button type="button" class="chip-btn" onclick="fillQuestionPrompt('What is today\'s 22K gold rate and making charge?')">What is today's 22K gold rate?</button>
+              <button type="button" class="chip-btn" onclick="fillQuestionPrompt('Can I customize a bridal set according to my budget?')">Can I customize a bridal set?</button>
+              <button type="button" class="chip-btn" onclick="fillQuestionPrompt('Do you have silver anklets and silver gift items in stock?')">Silver jewellery availability</button>
+              <button type="button" class="chip-btn" onclick="fillQuestionPrompt('I would like to book a private showroom visit for wedding shopping.')">Book wedding shopping appointment</button>
+            </div>
+          </div>
+
+          <div class="ask-form-group">
+            <label class="ask-label">Your Question</label>
+            <textarea id="askQuestionText" class="ask-textarea" placeholder="Type your question here (e.g. Can you make a 20-gram gold necklace design?)..."></textarea>
+          </div>
+
+          <div style="text-align: center;">
+            <button type="submit" class="btn-gold" style="padding: 1rem 2.5rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.705 1.754zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+              Continue on WhatsApp
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Feedback & Reviews -->
+  <section class="reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Trusted Reputation</span>
+        <h2 class="section-title gold-gradient-text">Customer Experiences</h2>
+        <p class="section-subtitle">Renowned across Jamia Nagar, Okhla, and New Delhi for authentic quality and reasonable rates.</p>
+      </div>
+
+      <div class="google-rating-banner">
+        <div class="rating-score">
+          4.1 <span class="rating-stars">★★★★★</span>
+        </div>
+        <div class="rating-text">
+          <strong>4.1 / 5 Rating from 8 Google Reviews</strong><br />
+          Trusted by families for wedding collections and reasonable rates.
+        </div>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="quote-icon">“</div>
+          <p class="review-text">There was a beautiful collection here! Found the perfect traditional gold necklace for my family function.</p>
+          <div class="reviewer-info">
+            <div class="reviewer-avatar">S</div>
+            <div class="reviewer-details">
+              <h5>Customer Feedback</h5>
+              <p>Jamia Nagar Shopper • Google Review Theme</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="quote-icon">“</div>
+          <p class="review-text">Latest designs and reasonable rates. Very polite staff and honest gold purity guidance.</p>
+          <div class="reviewer-info">
+            <div class="reviewer-avatar">A</div>
+            <div class="reviewer-details">
+              <h5>Customer Feedback</h5>
+              <p>Batla House Resident • Google Review Theme</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="quote-icon">“</div>
+          <p class="review-text">Good collection of jewellery for weddings and parties. Perfect one-stop store for bridal shopping.</p>
+          <div class="reviewer-info">
+            <div class="reviewer-avatar">F</div>
+            <div class="reviewer-details">
+              <h5>Customer Feedback</h5>
+              <p>Wedding Buyer • Google Review Theme</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="quote-icon">“</div>
+          <p class="review-text">Competitive prices and a good collection of both gold and sterling silver jewellery.</p>
+          <div class="reviewer-info">
+            <div class="reviewer-avatar">R</div>
+            <div class="reviewer-details">
+              <h5>Customer Feedback</h5>
+              <p>Regular Client • Google Review Theme</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-wrap">
+          <img src="assets/images/gold-necklace.jpg" alt="M.S. Jewellers Craftsmanship" />
+          <div class="about-badge-floating">
+            <span>MS</span>
+            <small style="color: var(--gold-champagne); font-size: 0.75rem;">TRUST & TRADITION</small>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <span class="section-tag">Our Heritage</span>
+          <h2 class="gold-gradient-text">Where Timeless Craftsmanship Meets Modern Elegance</h2>
+          <p>
+            M.S. Jewellers (एम.एस. ज्वैलर्स) stands as a premier jewellery destination in Batla House, Jamia Nagar, Okhla, New Delhi. Dedicated to celebrating your life’s most cherished milestones, we offer certified gold, fine silver, and royal bridal collections.
+          </p>
+          <p>
+            We believe luxury should be accompanied by warmth and integrity. Whether you are seeking a traditional Kundan set for a wedding, modern daily wear gold, or customized gemstone ornaments, our master jewellers deliver latest designs at competitive and reasonable prices.
+          </p>
+
+          <div style="display: flex; gap: 2rem; margin-top: 2rem; flex-wrap: wrap;">
+            <div>
+              <h4 style="color: var(--gold-primary); font-size: 1.5rem; font-family: var(--font-serif-title);">100%</h4>
+              <p style="font-size: 0.82rem; color: var(--text-muted);">BIS Hallmarked Gold</p>
+            </div>
+            <div>
+              <h4 style="color: var(--gold-primary); font-size: 1.5rem; font-family: var(--font-serif-title);">Custom</h4>
+              <p style="font-size: 0.82rem; color: var(--text-muted);">Bespoke Jewellery Atelier</p>
+            </div>
+            <div>
+              <h4 style="color: var(--gold-primary); font-size: 1.5rem; font-family: var(--font-serif-title);">Personal</h4>
+              <p style="font-size: 0.82rem; color: var(--text-muted);">1-on-1 WhatsApp Consultation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location & Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Visit Our Showroom</span>
+        <h2 class="section-title gold-gradient-text">Location & Contact</h2>
+        <p class="section-subtitle">We welcome you to experience our collections in person at our Jamia Nagar showroom.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-box">
+          <h3 style="font-size: 1.6rem; color: #FFFFFF; margin-bottom: 1.5rem;" class="gold-gradient-text">M.S. Jewellers</h3>
+          <p style="color: var(--gold-champagne); margin-bottom: 2rem; font-size: 0.95rem;">(एम.एस. ज्वैलर्स)</p>
+
+          <div class="contact-detail-item">
+            <div class="contact-icon">📍</div>
+            <div class="contact-text">
+              <h4>Showroom Address</h4>
+              <p>Batla House, 19/2, Nafees Road,<br />Jamia, Jogabai Extension, Jamia Nagar, Okhla,<br />New Delhi, Delhi 110025</p>
+            </div>
+          </div>
+
+          <div class="contact-detail-item">
+            <div class="contact-icon">📞</div>
+            <div class="contact-text">
+              <h4>Phone & WhatsApp</h4>
+              <p>+91 98910 21163</p>
+            </div>
+          </div>
+
+          <div class="contact-detail-item">
+            <div class="contact-icon">⭐</div>
+            <div class="contact-text">
+              <h4>Reputation</h4>
+              <p>4.1 ★ Rating (8 Google Reviews)<br />Known for latest designs, reasonable rates & wedding jewellery.</p>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 0.8rem; flex-wrap: wrap; margin-top: 2rem;">
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Batla+House,+19/2,+Nafees+Road,+Jamia,+Jogabai+Extension,+Jamia+Nagar,+Okhla,+New+Delhi,+Delhi+110025" target="_blank" class="btn-gold">
+              Get Directions
+            </a>
+            <a href="tel:+919891021163" class="btn-outline-gold">
+              Call Now
+            </a>
+            <button class="btn-outline-gold" onclick="chatOnWhatsApp()">
+              Chat on WhatsApp
+            </button>
+          </div>
+        </div>
+
+        <div class="map-container">
+          <iframe src="https://maps.google.com/maps?q=Batla%20House,%2019/2,%20Nafees%20Road,%20Jamia,%20Jogabai%20Extension,%20Jamia%20Nagar,%20Okhla,%20New%20Delhi,%20Delhi%20110025&t=&z=15&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-logo gold-gradient-text">M.S. JEWELLERS</div>
+      <p class="footer-subtitle">एम.एस. ज्वैलर्स • Batla House, Jamia Nagar, New Delhi</p>
+
+      <ul class="footer-links">
+        <li><a href="#home" class="footer-link">Home</a></li>
+        <li><a href="#collections" class="footer-link">Collections</a></li>
+        <li><a href="#bridal" class="footer-link">Bridal Sets</a></li>
+        <li><a href="#products" class="footer-link">Showroom Catalog</a></li>
+        <li><a href="#ask" class="footer-link">Ask Our Jewellers</a></li>
+        <li><a href="#contact" class="footer-link">Contact & Directions</a></li>
+      </ul>
+
+      <div class="footer-copyright">
+        © 2026 M.S. Jewellers. All rights reserved. Designed for Royal Luxury & WhatsApp-First Engagement.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky Bottom Navigation Bar for Mobile -->
+  <div class="mobile-bottom-bar">
+    <div class="mobile-bottom-nav">
+      <a href="#" onclick="chatOnWhatsApp(); return false;" class="mobile-action-btn mobile-btn-whatsapp">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.705 1.754zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+        WhatsApp
+      </a>
+      <a href="tel:+919891021163" class="mobile-action-btn mobile-btn-call">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+        Call Us
+      </a>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=Batla+House,+19/2,+Nafees+Road,+Jamia,+Jogabai+Extension,+Jamia+Nagar,+Okhla,+New+Delhi,+Delhi+110025" target="_blank" class="mobile-action-btn mobile-btn-directions">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        Directions
+      </a>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="#" onclick="chatOnWhatsApp(); return false;" class="floating-whatsapp-btn" title="Chat with M.S. Jewellers">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.705 1.754zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+  </a>
+
+  <!-- Product Quick View Modal -->
+  <div class="modal-overlay" id="productModalOverlay">
+    <div class="modal-card">
+      <button class="modal-close-btn" onclick="closeProductModal()">✕</button>
+      <div id="productModalBody">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
